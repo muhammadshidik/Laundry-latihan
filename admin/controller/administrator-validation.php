@@ -1,5 +1,5 @@
 <?php
-require_once '../controller/koneksi.php';
+require_once 'admin/controller/koneksi.php';
 $validationID = $_SESSION['id'];
 $validationUserQuery = mysqli_query($connection, "SELECT * FROM user WHERE id = '$validationID'");
 $dataValidation = mysqli_fetch_assoc($validationUserQuery);

@@ -18,7 +18,7 @@ $rowDashboard = mysqli_fetch_array($queryDashboard);
 
 <div class="card">
     <div class="card-header">
-        <h3>Dashboard</h3>
+        <h5>Dashboard</h5>
     </div>
     <div class="card-body d-flex align-items-center justify-content-center gap-3">
         <div class="row">
@@ -26,7 +26,7 @@ $rowDashboard = mysqli_fetch_array($queryDashboard);
                 <img src="img/logo/logo3.png" alt="">
             </div>
             <div class="col-sm-12" align="center">
-                <h2>Welcome, <?= $rowDashboard['username'] ?>!</h2>
+                <h2>Konnichiwa, <?= $rowDashboard['username'] ?> San !</h2>
             </div>
         </div>
     </div>
