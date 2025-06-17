@@ -81,8 +81,8 @@
            <div class="card-body">
              <?php
               if (isset($_GET['page'])) {
-                if (file_exists('content/' . $_GET['page'] . '.php')) {
-                  include 'content/' . $_GET['page'] . '.php';
+                if (file_exists('admin/content/' . $_GET['page'] . '.php')) {
+                  include 'admin/content/' . $_GET['page'] . '.php';
                 } else {
                   header("Location: admin/content/misc/error.php");
                   die;

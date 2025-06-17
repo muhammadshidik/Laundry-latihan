@@ -47,7 +47,7 @@ $dataNavbar = mysqli_fetch_assoc($queryNavbar);
           </li>
           <li class="sidebar-item <?= (isset($_GET['page']) && ($_GET['page'] == 'level' || $_GET['page'] == 'add-level')) ? 'active' : '' ?>">
             <a class="sidebar-link justify-content-between"
-              href="#" aria-expanded="false">
+              href="?page=level" aria-expanded="false">
               <div class="d-flex align-items-center gap-3">
                 <span class="d-flex">
                   <i class="ti ti-id-badge"></i>
@@ -59,7 +59,7 @@ $dataNavbar = mysqli_fetch_assoc($queryNavbar);
           </li>
           <li class="sidebar-item <?= (isset($_GET['page']) && ($_GET['page'] == 'customer' || $_GET['page'] == 'add-customer')) ? 'active' : '' ?>">
             <a class="sidebar-link justify-content-between "
-              href="admin/content/user.php" aria-expanded="false">
+              href="?page=customer" aria-expanded="false">
               <div class="d-flex align-items-center gap-3">
                 <span class="d-flex">
                   <i class="fa-regular fa-user"></i>
@@ -71,7 +71,7 @@ $dataNavbar = mysqli_fetch_assoc($queryNavbar);
           </li>
           <li class="sidebar-item <?= (isset($_GET['page']) && ($_GET['page'] == 'service' || $_GET['page'] == 'add-service')) ? 'active' : '' ?> ">
             <a class="sidebar-link justify-content-between "
-              href="admin/content/user.php" aria-expanded="false">
+              href="?page=service" aria-expanded="false">
               <div class="d-flex align-items-center gap-3">
                 <span class="d-flex">
                   <i class="ti ti-harddrives"></i>
