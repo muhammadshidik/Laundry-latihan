@@ -35,39 +35,39 @@
        <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
          <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
 
-           <li class="nav-item dropdown">
-             <a class="nav-link " href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
-               aria-expanded="false">
-               <img src="<?= !empty($rowNav['profile_picture']) && file_exists('../img/profile_picture/' . $rowNav['profile_picture']) ? 'img/profile_picture/' . $rowNav['profile_picture'] : 'https://placehold.co/100' ?>" alt="" width="35" height="35" class="rounded-circle">
-             </a>
-             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
-
-               <div class="message-body">
-                 <div class="d-flex align-items-center gap-2 dropdown-item">
-                   <div class="avatar avatar-online">
-                     <img src="<?= !empty($rowNav['profile_picture']) && file_exists('../img/profile_picture/' . $rowNav['profile_picture']) ? 'img/profile_picture/' . $rowNav['profile_picture'] : 'https://placehold.co/100' ?>" alt class="w-px-40 h-auto rounded-circle" />
-                   </div>
-                   <span
-                     class="fw-semibold d-block"><?= isset($rowNav['username']) ? $rowNav['username'] : '-- your name --' ?></span>
-                   <small
-                     class="text-muted"><?= isset($rowNav['level_name']) ? $rowNav['level_name'] : 'unleveled' ?></small>
-                 </div>
-                 <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                   <i class="ti ti-user fs-6"></i>
-                   <p class="mb-0 fs-3">My Profile</p>
-                 </a>
-                 <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                   <i class="ti ti-mail fs-6"></i>
-                   <p class="mb-0 fs-3">My Account</p>
-                 </a>
-                 <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                   <i class="ti ti-list-check fs-6"></i>
-                   <p class="mb-0 fs-3">My Task</p>
-                 </a>
-                 <a href="admin/controller/logout.php" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+           <div>
+             <li class="nav-item dropdown">
+               <div class="nav-link " href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                 <img src="<?= !empty($rowNav['profile_picture']) && file_exists('../img/profile_picture/' . $rowNav['profile_picture']) ? 'img/profile_picture/' . $rowNav['profile_picture'] : 'https://placehold.co/100' ?>" alt="" width="35" height="35" class="rounded-circle">
                </div>
-             </div>
-           </li>
+               <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                 <div class="message-body">
+                   <div class="d-flex align-items-center gap-2 dropdown-item">
+                     <div class="avatar avatar-online">
+                       <img src="<?= !empty($rowNav['profile_picture']) && file_exists('../img/profile_picture/' . $rowNav['profile_picture']) ? 'img/profile_picture/' . $rowNav['profile_picture'] : 'https://placehold.co/100' ?>" alt class="w-px-40 h-auto rounded-circle" />
+                     </div>
+                     <div>
+                       <span class="fw-semibold d-block"><?= isset($rowNav['username']) ? $rowNav['username'] : '-- your name --' ?></span>
+                       <small class="text-muted"><?= isset($rowNav['level_name']) ? $rowNav['level_name'] : 'unleveled' ?></small>
+                     </div>
+                   </div>
+                   <a href="?page=my-profile" class="d-flex align-items-center gap-2 dropdown-item">
+                     <i class="ti ti-user fs-6"></i>
+                     <p class="mb-0 fs-3">My Profile</p>
+                   </a>
+                   <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                     <i class="ti ti-mail fs-6"></i>
+                     <p class="mb-0 fs-3">My Account</p>
+                   </a>
+                   <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                     <i class="ti ti-list-check fs-6"></i>
+                     <p class="mb-0 fs-3">My Task</p>
+                   </a>
+                   <a href="admin/controller/logout.php" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                 </div>
+               </div>
+             </li>
          </ul>
        </div>
      </nav>

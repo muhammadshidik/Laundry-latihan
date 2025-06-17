@@ -62,7 +62,7 @@ $dataNavbar = mysqli_fetch_assoc($queryNavbar);
               href="?page=customer" aria-expanded="false">
               <div class="d-flex align-items-center gap-3">
                 <span class="d-flex">
-                  <i class="fa-regular fa-user"></i>
+                  <i class="ti ti-thumb-up"></i>
                 </span>
                 <span class="hide-menu">Customer</span>
               </div>
@@ -74,7 +74,7 @@ $dataNavbar = mysqli_fetch_assoc($queryNavbar);
               href="?page=service" aria-expanded="false">
               <div class="d-flex align-items-center gap-3">
                 <span class="d-flex">
-                  <i class="ti ti-harddrives"></i>
+                  <i class="ti ti-receipt"></i>
                 </span>
                 <span class="hide-menu">Service</span>
               </div>
