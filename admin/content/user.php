@@ -1,5 +1,5 @@
 <?php
-include 'admin/controller/administrator-validation.php';
+include '../controller/administrator-validation.php';
 $queryData = mysqli_query($connection, "SELECT user.id, user.deleted_at, user.username, user.email, level.level_name FROM user LEFT JOIN level ON user.id_level = level.id ORDER BY user.id_level ASC, user.updated_at DESC");
 ?>
 <div class="card shadow">
@@ -7,7 +7,7 @@ $queryData = mysqli_query($connection, "SELECT user.id, user.deleted_at, user.us
         <h3>Data User</h3>
     </div>
     <div class="card-body">
-        <?php include 'controller/alert-data-crud.php' ?>
+        <?php include '../controller/alert-data-crud.php' ?>
         <div align="right" class="button-action">
             <a href="?page=add-user" class="btn btn-primary"><i class='bx bx-plus'></i></a>
         </div>
