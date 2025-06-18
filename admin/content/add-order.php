@@ -10,7 +10,7 @@ if (mysqli_num_rows($getOrderCodeQuery) > 0) {
 } else {
     $orderCodeID = 0;
 }
-$orderCode = "LNDRY-" . date('YmdHis') . $orderCodeID + 1;
+$orderCode = "CRD-" . date('YmdHis') . $orderCodeID + 1;
 
 if (isset($_POST['add_order'])) {
     $id_customer = $_POST['id_customer'];

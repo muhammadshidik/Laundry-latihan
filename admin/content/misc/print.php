@@ -22,7 +22,7 @@ WHERE id_order = '$id'");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laundry Faith</title>
+    <title>Laundry App</title>
     <link rel="icon" type="image/png" href="../../img/logo/logo3.png">
 
     <style>
@@ -144,9 +144,9 @@ WHERE id_order = '$id'");
 <body>
     <div class="struct">
         <div class="struct-header">
-            <img src="../../img/logo/logo3.png" alt="Laundry Faith Logo" width="50px">
-            <p><strong>Laundry Faith</strong></p>
-            <p>Grove St.</p>
+            <img src="https://awsimages.detik.net.id/customthumb/2012/04/16/10/Jokowi-Metal-D.jpg?w=600&q=90" alt="Laundry Faith Logo" width="50px">
+            <p><strong>Laundry App</strong></p>
+            <p>Jl.Tb. Simatupang, RT.011, RW.002, Kel. Susukan, Kec. Ciracas, Jakarta Timur</p>
             <p>0818-0818-0818</p>
         </div>
         <br>

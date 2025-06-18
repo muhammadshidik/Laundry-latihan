@@ -14,7 +14,7 @@ $queryData = mysqli_query($connection, "SELECT * FROM customer ORDER BY updated_
         <table class="table table-bordered table-striped table-hover table-responsive mt-3">
             <thead>
                 <tr>
-                    <th>#</th>
+                    <th>No</th>
                     <th>Customer Name</th>
                     <th>Phone</th>
                     <th>Address</th>

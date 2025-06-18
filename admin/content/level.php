@@ -14,7 +14,7 @@ $queryData = mysqli_query($connection, "SELECT * FROM level ORDER BY id ASC");
         <table class="table table-bordered table-striped table-hover table-responsive mt-3">
             <thead>
                 <tr>
-                    <th>#</th>
+                    <th>No</th>
                     <th>Level Name</th>
                     <th>Action</th>
                 </tr>

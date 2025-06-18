@@ -72,7 +72,7 @@ if (isset($_GET['clear'])) {
         <table class="table table-bordered table-striped table-hover table-responsive mt-3">
             <thead>
                 <tr>
-                    <th>#</th>
+                    <th>No</th>
                     <th>Order Code</th>
                     <th>Customer Name</th>
                     <th>Order Start Date</th>
@@ -97,21 +97,21 @@ if (isset($_GET['clear'])) {
                         <td><?= $statusOrder ?></td>
                         <td align="right">
                             <?php if ($rowData['order_status'] == 1): ?>
-                                <a href="content/misc/print.php?order=<?php echo $rowData['id'] ?>" target="_blank">
-                                    <button class="btn btn-secondary">
-                                        <i class="tf-icon bx bx-printer bx-22px"></i>
+                                <a href="admin/content/misc/print.php?order=<?php echo $rowData['id'] ?>" target="_blank">
+                                    <button class="btn btn-secondary btn-sm">
+                                        <i class="tf-icon bx bx-printer bx-22px">Print</i>
                                     </button>
                                 </a>
                             <?php endif ?>
                             <a href="?page=add-report&view=<?php echo $rowData['id'] ?>">
-                                <button class="btn btn-secondary">
-                                    <i class="tf-icon bx bx-show bx-22px"></i>
+                                <button class="btn btn-secondary btn-sm">
+                                    <i class="tf-icon bx bx-show bx-22px">View</i>
                                 </button>
                             </a>
                             <a onclick="return confirm ('Apakah anda yakin akan menghapus data ini?')"
                                 href="?page=add-report&delete=<?php echo $rowData['id'] ?>">
-                                <button class="btn btn-danger">
-                                    <i class="tf-icon bx bx-trash bx-22px"></i>
+                                <button class="btn btn-danger btn-sm">
+                                    <i class="tf-icon bx bx-trash bx-22px">Delete</i>
                                 </button>
                             </a>
                         </td>

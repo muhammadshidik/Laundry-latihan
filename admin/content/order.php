@@ -16,7 +16,7 @@ $queryData = mysqli_query($connection, "SELECT trans_order.*, customer.customer_
         <table class="table table-bordered table-striped table-hover table-responsive mt-3">
             <thead>
                 <tr>
-                    <th>#</th>
+                    <th>No</th>
                     <th>Order Code</th>
                     <th>Customer Name</th>
                     <th>Order Start Date</th>
