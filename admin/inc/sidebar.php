@@ -84,21 +84,14 @@ $dataNavbar = mysqli_fetch_assoc($queryNavbar);
           <!-- Operator -->
 
         <?php elseif ($dataNavbar['id_level'] == 2) : ?>
-          <li class="sidebar-item">
-            <a class="sidebar-link justify-content-between "
-              href="admin/content/user.php" aria-expanded="false">
-              <div class="d-flex align-items-center gap-3">
-                <span class="d-flex">
-                  <i class="ti ti-aperture"></i>
-                </span>
-                <span class="hide-menu">Transaction Data</span>
-              </div>
-            </a>
+           <li class="nav-small-cap">
+            <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
+            <span class="hide-menu">Transaction Data</span>
           </li>
 
           <li class="sidebar-item <?= (isset($_GET['page']) && ($_GET['page'] == 'order' || $_GET['page'] == 'add-order')) ? 'active' : '' ?>">
             <a class="sidebar-link justify-content-between "
-              href="user.php" aria-expanded="false">
+              href="?page=order" aria-expanded="false">
               <div class="d-flex align-items-center gap-3">
                 <span class="d-flex">
                   <i class="ti ti-aperture"></i>
@@ -110,7 +103,7 @@ $dataNavbar = mysqli_fetch_assoc($queryNavbar);
 
           <li class="sidebar-item <?= (isset($_GET['page']) && ($_GET['page'] == 'pickup' || $_GET['page'] == 'add-pickup')) ? 'active' : '' ?>">
             <a class="sidebar-link justify-content-between "
-              href="admin/content/user.php" aria-expanded="false">
+              href="?page=pickup" aria-expanded="false">
               <div class="d-flex align-items-center gap-3">
                 <span class="d-flex">
                   <i class="ti ti-aperture"></i>
@@ -122,21 +115,14 @@ $dataNavbar = mysqli_fetch_assoc($queryNavbar);
 
           <!-- Pimpinan -->
         <?php elseif ($dataNavbar['id_level'] == 3) : ?>
-          <li class="sidebar-item">
-            <a class="sidebar-link justify-content-between "
-              href="admin/content/user.php" aria-expanded="false">
-              <div class="d-flex align-items-center gap-3">
-                <span class="d-flex">
-                  <i class="ti ti-aperture"></i>
-                </span>
-                <span class="hide-menu">Transaction Data</span>
-              </div>
-            </a>
+           <li class="nav-small-cap">
+            <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
+            <span class="hide-menu">Transaction Data</span>
           </li>
 
           <li class="sidebar-item <?= (isset($_GET['page']) && ($_GET['page'] == 'report' || $_GET['page'] == 'add-report')) ? 'active' : '' ?>">
             <a class="sidebar-link justify-content-between "
-              href="admin/content/user.php" aria-expanded="false">
+              href="?page=report" aria-expanded="false">
               <div class="d-flex align-items-center gap-3">
                 <span class="d-flex">
                   <i class="ti ti-aperture"></i>

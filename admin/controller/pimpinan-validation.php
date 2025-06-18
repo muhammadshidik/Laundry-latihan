@@ -1,6 +1,6 @@
 <?php
 // Mengimpor file koneksi database
-require_once '../controller/connection.php';
+require_once 'admin/controller/koneksi.php';
 
 // Mengambil ID user dari session saat ini
 $validationID = $_SESSION['id'];

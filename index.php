@@ -20,6 +20,11 @@ if (empty($_SESSION['id'])) {
   <title>Laundry App</title>
   <link rel="shortcut icon" type="image/png" href="https://img.freepik.com/premium-vector/simple-laundry-logo_756483-88.jpg?semt=ais_hybrid&w=740" />
  <?php include("admin/linkCDN/css.php")?>
+ <!-- Bootstrap CSS -->
+
+<!-- Bootstrap Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
